@@ -1,23 +1,22 @@
 body{
-  background:#efeed3ee; /* Меняется фон экрана, выбирается здесь */
-}
+  background:#efeed3ee;
 
-#wrapper{ /* Оболочка страницы сайта */
-  width: 900px; /* Меняется ширина страницы */
+#wrapper{ 
+  width: 900px; 
   margin: 0 auto;
-  background:#e3e6c9; /* Меняется задний фон страницы */
+  background:#e3e6c9; 
 }
 #header{
-position:relative; /* Задаём блоку относительное позиционирование для того, чтобы затем размещать, в нём другие элементы и позиционировать относительно его границ поверх фоновой картинки и заголовка */
-  height: 250px; /* Высота шапки */
-  background-color: #ffffff; /* Фон шапки */
+position:relative;
+  height: 250px; 
+  background-color: #ffffff; 
   background-image: url(images/banner.jpg);
-  margin-bottom: 5px; /* Нижний отступ шапки от остального контента */
-  border-radius: 5px; /* Закругляются углы блока */
-  box-shadow: rgba(0,0,0,0.5) 2px 1px 3px; /* Тень. Визуально приподнимает блок над оболочкой */
+  margin-bottom: 5px; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 2px 1px 3px; 
 }
-img{ /* Фоновая картинка в шапке */
-float: left; /* Разрешаем наплывание других элементов на картинку */
+img{ 
+float: left; 
   margin: -40px 0 0 0;} /* Размещаем картинку в блоке header. 1-я и 3-я цифры - двигаем вверх-вниз, 2-я и 4-я цифры - двигаем вправо-влево */
 h1{ /* Заголовок сайта */
   margin:0 0 10px 40px; /* Заголовок двигается верх-вправо-вниз-влево. */
@@ -25,36 +24,36 @@ h1{ /* Заголовок сайта */
   width: 30px; ;
 }
 
-/* Сайдбар (колонка справа) */
 
-#sidebar{ /* Блок сайдбара */
-  background-color: #ffffff; /* Фон блока */
-  width: 180px; /* Ширина блока */
-  padding: 5px; /* Отступ текста от краёв */
-  float: right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
-  border-radius: 10px; /* Закругляем углы блока */
-  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
+
+#sidebar{ 
+  background-color: #ffffff; 
+  width: 180px; 
+  padding: 5px; 
+  float: right; 
+  border-radius: 10px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
 }
-.marcer{ /* Галочки маркеры меню */
-  float: left; /* Размещаем слева от текста */
-  margin: 5px 5px 0 0; /* Двигаются вверх-вправо-вниз-влево */
+.marcer{ 
+  float: left; 
+  margin: 5px 5px 0 0; 
 }
 
-/* Контент (статья) */
 
-#content{ /* Блок контента */
-  margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
-  width: 680px; /* Ширина статьи */
-  padding: 10px; /* Отступ текста от краёв блока */
-  background: #ffffff; /* Фон статьи */
+
+#content{ 
+  margin-bottom: 5px; 
+  width: 680px; 
+  padding: 10px; 
+  background: #ffffff; 
   border-radius: 5px;
   box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
 }
-.left{ /* Картинка в тексте слева */
+.left{ 
   float: left;
   margin: 30px 7px 7px 7px;
 }
-.right{ /* Картинка в тексте справа */
+.right{ 
   float: right;
   margin: 7px 0 7px 7px;
   width: 300px;
@@ -66,21 +65,21 @@ h1{ /* Заголовок сайта */
 }
 /* Подвал */
 
-#footer{ /* Блок подвала */
-  height:80px; /* Высота блока подвала */
-  background-color: #ffffff; /* Фон блока подвала */
-  margin-bottom: 0px; /* Отступ снизу */
-  border-radius: 5px; /* Закруглённые углы */
-  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень блока */
+#footer{ 
+  height:80px; 
+  background-color: 
+  margin-bottom: 0px; 
+  border-radius: 5px; 
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; 
 }
-.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+.clear{ 
   clear: both;
 }
-  .fon{ /* Номер телефона */
-  float:left; /* Разрешаем другим элементам обтекать абзац справа */
+  .fon{ 
+  float:left; 
   margin:20px 0 0 20px;
 }
-.mail{ /* Адрес E-mail */
+.mail{ 
   float:left;
  margin:20px 0 0 60px;
 }
@@ -91,4 +90,4 @@ h1{ /* Заголовок сайта */
 }
 
 
-/* Адрес E-mail */
+
