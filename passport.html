@@ -20,27 +20,60 @@
 
 	<h5 id="pass_title" class="poiret-one-regular">РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
 	<div id="page_top">
-		<p class="vidanstr1">ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ</p>
-		<p class="vidanstr2">ГОР. МАЙКОП</p>
-		<p class="vidanstrdata">05.02.2020</p>
-		<p class="vidanstrcode">630-002</p>
+		<p class="vidanstr1" id="vidanstr1">ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ</p>
+		<p class="vidanstr2" id="vidanstr2">ГОР. МАЙКОП</p>
+		<p class="vidanstrdata" id="vidanstrdata">05.02.2020</p>
+		<p class="vidanstrcode" id="vidanstrcode">630-002</p>
 		<img class="podpis" src='images\pod_2.png'>
 		<img class="podpis1" src="images\pod_1.png">
 	</div>
 
 	<div id="page_bottom">
 		<img class="passfoto" src="images\girl_1.jpg">
-		<p class="hfamilia">КЕСИДУ</p>
-		<p class="hname">ФОТИНИ</p>
-		<p class="hfname">--</p>
-		<p class="hpol">ЖЕН.</p>
-		<p class="hborn">05.01.2006</p>
-		<p class="hpborn1">ПАФОС</p>
-		<p class="hpborn2">КИПР</p>
+		<p class="hfamilia" id="hfamilia">КЕСИДУ</p>
+		<p class="hname" id="hname">ФОТИНИ</p>
+		<p class="hfname" id="hfname">--</p>
+		<p class="hpol" id="hpol">ЖЕН.</p>
+		<p class="hborn" id="hborn">05.01.2006</p>
+		<p class="hpborn1" id="hpborn1">ПАФОС</p>
+		<p class="hpborn2" id="hpborn2">КИПР</p>
 	</div>
-
 </div>
+<div class="button-container">
+    <button id="translateButton">Поменять</button>
+</div>
+<script>
+    document.getElementById('translateButton').addEventListener('click', function() {
+        const vidanstr1Text = document.getElementById('vidanstr1');
+        const vidanstr2Text = document.getElementById('vidanstr2');
+        const vidanstrdataText = document.getElementById('vidanstrdata');
+        const vidanstrcodeText = document.getElementById('vidanstrcode');
+        const hfamiliaText = document.getElementById('hfamilia');
+        const hnameText = document.getElementById('hname');
+        const nfnameText = document.getElementById('nfname');
+        const hpolText = document.getElementById('hpol');
+        const hpborn1Text = document.getElementById('hpborn1');
+        const hpborn2Text = document.getElementById('hpborn2');
 
+        if (vidanstr1Text.innerText === 'ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ') {
+            vidanstr1Text.innerText = 'DEPARTMENT OF INTERNAL AFFAIRS';
+            vidanstr2Text.innerText = 'CITY MAYKOP';
+            hfamiliaText.innerText = 'KESIDU';
+            hnameText.innerText = 'FOTINI';
+            hpolText.innerText = 'WOM';
+            hpborn1Text.innerText = 'PATHOS';
+            hpborn2Text.innerText = 'CYPRUS';
+        } else {
+            vidanstr1Text.innerText = 'ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ';
+            vidanstr2Text.innerText = 'ГОР. МАЙКОП';
+            hfamiliaText.innerText = 'КЕСИДУ';
+            hnameText.innerText = 'ФОТИНИ';
+            hpolText.innerText = 'ЖЕН';
+            hpborn1Text.innerText = 'ПАФОС';
+            hpborn2Text.innerText = 'КИПР';
+        }
+    });
+</script>
 
 </body>
 </html>
