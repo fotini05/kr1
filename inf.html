@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Сайт для майнора</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <div id="wrapper"> <!--Оболочка страницы-->
+<!--Шапка сайта-->
+    <div id="header">
+<!--Заголовок сайта-->
+      <h1>АРХИТЕКТУРНОЕ БЮРО</h1>
+<!--Фоновая картинка в шапке сайта-->
+      <img src="">
+    </div>
+<!--Сайдбар-->
+    <div id="sidebar">
+<!--меню-->
+      <h3><a href="index.html">На нашем сайте</a></h3>
+<!--Картинки маркеров меню (галочки)-->
+        <p><a href="people.html">Наши сотрудники</a></p> 
+        <p><a href="projects.html">Наши проекты</a></p>
+        <p><a href="location.html">Местоположение студий</a></p>
+        <p><a href="ff.html">Алгометрическая задача</a></p>
+        <p><a href="passport.html">Паспорт</a></p>
+        <p><a href="DOM_JS.html">DOM_JS</a></p>
+<!--Прямая синяя линия-->
+          <hr width="50" color="#037FFC" size="5">
+<!--Общая информация в сайдбаре-->
+      <h3><a href="inf.html">Другая информация</a></h3>
+    </div>
+<!--Основной контент (статья)-->
+    <div id="content">
+<!--Заголовок статьи-->
+        <h3 align="center">ДРУГАЯ ИНФОРМАЦИЯ</h3>
+<!--Текст статьи-->
+<p>Вы можете задать любой вопрос!</p>
+<img class="right" src="images/0b59a3afb2a2238387e195e8284cf149.jpg">
+<h2>Регистрация пользователя</h2>
+        <form name="signup " action="signup" method="post" autocomplete="on">
+            <div>
+                <label>Введите ФИО</label>
+                <input type="name" name="username"/>
+            </div>
+            <div>
+                <label>Введите пароль</label>
+                <input type="password" name="password"/>
+            </div>
+            <div>
+                <label>Укажите пол</label>
+                <input type="radio" name="pol" value="0"/>Мужской
+                <input type="radio" name="pol" value="1"/>Женский
+            </div>
+            <div>
+                <label>Согласны на обработку персональных данных?</label>
+                <input type="checkbox" name="rules"/>
+            </div>
+
+            <div>
+                <label>Введите e-mail</label>
+                <input type="email" name="email"/>
+            </div>
+            <div>
+                <textarea></textarea>
+            </div>
+            <input type="submit" name="signup" value="отправить" />
+
+        </form>
+        </table>
+        <p>Не стесняйтесь задавать любой интересующийся вас вопрос!</p>
+        <p>Мы обязательно вам ответим</p>
+<p>Уверена, у нас получится создать проект вашей мечты!</p>
+    </div>
+<!--Запрет наплывания-->
+  <div class="clear"></div>
+<!--Подвал-->
+    <div id="footer">
+      <p class="fon"><strong>Телефон:<br> 8-962-762-68-68</strong> </p>
+      <p class="mail"><strong>E-mail<br>arch_buro@mail.ru</strong></p>
+
+    </div>
+  </div>
+</body>
+</html>
