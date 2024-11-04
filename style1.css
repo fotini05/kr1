@@ -8,6 +8,18 @@
 	height: 734px;
 	background-image:url(images/fon.png);
 	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: inline-block;
+	width: 600px;
+	height: 750px;
+
+	
+	
+}
+#glav{
+	display: grid
 }
 
 #pass_title{
@@ -112,4 +124,7 @@
 .hpborn2{
 	padding-top: 10px;
 	padding-left:250px;
+}
+.button-container {
+    margin-top: 20px;
 }
